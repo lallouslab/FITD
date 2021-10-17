@@ -40,7 +40,7 @@ private:
     int getSelectedIndex();
 
 public slots:
-    bool openPAK();
+    bool openPAK(bool init=false);
     bool savePAK();
     bool savePAKUncompressed();
     void exportAll_Compressed();
@@ -52,7 +52,7 @@ public slots:
     bool exportSelectedFile_Decompressed();
     bool exportSelectedFile_Interpreted();
 
-    bool openDB();
+    bool openDB(bool init=false);
     void updateDB();
     bool writeDB();
 };
